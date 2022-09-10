@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MenuSection from "../components/MenuSection.astro";
+---
+
+<Layout title="Friestick Menu">
+  <main
+    class="w-full h-[100vh] p-6 flex flex-col items-center text-white border-yellow-400 border-2"
+  >
+    <h1 class="text-6xl text-yellow-400">Friestick</h1>
+    <section
+      class="mt-12 py-6 rounded-lg grid sm:grid-cols-1 md:grid-cols-3 w-full place-items-center gap-12"
+    >
+      <MenuSection title="Hamburgesas" emoji="🍔" />
+      <MenuSection title="Papas" emoji="🍟" />
+      <MenuSection title="Burros" emoji="🌯" />
+      <MenuSection title="Hotdogs" emoji="🌭" />
+    </section>
+  </main>
+</Layout>
