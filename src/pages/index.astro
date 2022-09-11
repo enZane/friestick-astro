@@ -33,6 +33,19 @@ import Price from "../components/Price.astro";
             />
           ))
         }
+        <span class="flex justify-baseline text-xl">
+          <p class="mr-auto underline">Extras</p>
+          <Price precio={50} />
+        </span>
+        <div class="md:grid md:grid-cols-12 sm:flex sm:flex-col gap-4">
+          {
+            extras.map((item) => (
+              <p class="md:bg-white md:text-black rounded-md text-center col-span-4 sm:my-2 md:my-0">
+                {item}
+              </p>
+            ))
+          }
+        </div>
       </MenuSection>
       <MenuSection title="Papas" emoji="🍟">
         {
@@ -44,6 +57,16 @@ import Price from "../components/Price.astro";
             />
           ))
         }
+        <p class="text-xl underline">Salsas</p>
+        <div class="md:grid md:grid-cols-12 sm:flex sm:flex-col gap-4">
+          {
+            salsas.map((item) => (
+              <p class="md:bg-white md:text-black rounded-md text-center col-span-4 sm:my-2 md:my-0">
+                {item}
+              </p>
+            ))
+          }
+        </div>
       </MenuSection>
       <MenuSection title="Burros" emoji="🌯">
         <div class="flex">
@@ -63,6 +86,14 @@ import Price from "../components/Price.astro";
             />
           ))
         }
+      </MenuSection>
+      <MenuSection title="Refrescos" emoji="🥤">
+        <div class="flex">
+          <ul class="list-disc list-inside">
+            {refrescos.map((item) => <li>{item.nombre}</li>)}
+          </ul>
+          <Price precio={32} />
+        </div>
       </MenuSection>
     </section>
   </main>
