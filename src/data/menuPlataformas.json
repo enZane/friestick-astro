@@ -1,0 +1,138 @@
+{
+  "hamburguesas": [
+    {
+      "nombre": "Clásica",
+      "precio": 90,
+      "descripcion": "175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Cavernícola",
+      "precio": 110,
+      "descripcion": "carne asada, peperoni, 175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Suprema",
+      "precio": 110,
+      "descripcion": "Pierna,Champiñones,Peperoni,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Hawaiana",
+      "precio": 110,
+      "descripcion": "Piña,Champiñones,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Porky",
+      "precio": 110,
+      "descripcion": "Pierna,Tocino,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Al pastor",
+      "precio": 110,
+      "descripcion": "Carne al pastor,Piña,Cebollita y cilantro,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Choriqueso",
+      "precio": 110,
+      "descripcion": "Carne al pastor,Piña,Cebollita y cilantro,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Choriqueso",
+      "precio": 110,
+      "descripcion": "Chorizo español,asadero artesanal,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Champiqueso",
+      "precio": 110,
+      "descripcion": "Champiñones,asadero artesanal,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Cavernicola especial",
+      "precio": 110,
+      "descripcion": "Carne asada,salchicha para asar,Peperoni,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    },
+    {
+      "nombre": "Doble",
+      "precio": 110,
+      "descripcion": "Carne asada,salchicha para asar,Peperoni,175g de carne artesanal, jamón de pavo, queso blanco, queso amarillo, pan con ajonjolí, lechuga, tomate, cebolla morada, mayonesa y mostaza."
+    }
+  ],
+  "extras": [
+    "Tocino",
+    "Cebolla caramelizada",
+    "Extra piña",
+    "Salchicha para asar",
+    "Extra queso amarillo",
+    "Extra asadero"
+  ],
+  "papas": [
+    {
+      "nombre": "Porción Individual",
+      "precio": 40,
+      "descripcion": "Porción individual de papas fritas (200gr)"
+    },
+    {
+      "nombre": "Orden Individual",
+      "precio": 80,
+      "descripcion": "Orden de papas fritas (350gr)"
+    },
+    {
+      "nombre": "Papas Cavernícolas",
+      "precio": 120,
+      "descripcion": "Orden de papas fritas (350gr) con 175grs de carne de hamburguesa artesanal."
+    },
+    {
+      "nombre": "Papas Supremas",
+      "precio": 120,
+      "descripcion": "Orden de papas fritas (350gr), pierna, champiñones, peperoni"
+    },
+    {
+      "nombre": "Choripapas",
+      "precio": 120,
+      "descripcion": "Orden de papas fritas (350gr) con chorizo español"
+    },
+    {
+      "nombre": "Salchipapas",
+      "precio": 120,
+      "descripcion": "Orden de papas fritas (350gr) con salchiha para asar"
+    },
+    {
+      "nombre": "Papas al pastor",
+      "precio": 120,
+      "descripcion": "Orden de papas fritas (350gr) con carne al pastor"
+    }
+  ],
+  "burritos": {
+    "ingredientes": [
+      "Asada",
+      "Pierna",
+      "Bistec a la mexicana",
+      "Adobada",
+      "Al pastor",
+      "Chicharron Prensado"
+    ],
+    "precio": 40
+  },
+  "hotdogs": [
+    {
+      "nombre": "Hotdog Clásico",
+      "precio": 32,
+      "descripcion": "Hotdog con salchicha de pavo, mostaza, ketchup, mayonesa y chile"
+    },
+    {
+      "nombre": "Hotdog Cavernicola",
+      "precio": 40,
+      "descripcion": "Hotdog con salchicha para asar, mostaza, ketchup, mayonesa y chile"
+    }
+  ],
+  "salsas": ["Mango Habanero", "Búfalo", "BBQ Hot", "BBQ", "Lemon Pepper"],
+  "refrescos": [
+    {
+      "nombre": "Coca Cola",
+      "precio": 32
+    },
+    {
+      "nombre": "Pepsi",
+      "precio": 32
+    }
+  ]
+}

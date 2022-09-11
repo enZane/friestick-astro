@@ -1,0 +1,19 @@
+---
+import Price from "./Price.astro";
+
+export interface Props {
+  nombre: string;
+  precio: number;
+  descripcion: string;
+}
+
+const { nombre, precio, descripcion } = Astro.props;
+---
+
+<div>
+  <span class="flex mb-2 items-baseline">
+    <h2 class="text-2xl mr-auto">{nombre}</h2>
+    <Price precio={precio} />
+  </span>
+  <p class="">{descripcion}</p>
+</div>

@@ -1,20 +1,69 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MenuSection from "../components/MenuSection.astro";
+import MenuItem from "../components/MenuItem.astro";
+
+import {
+  hamburguesas,
+  burritos,
+  extras,
+  hotdogs,
+  papas,
+  refrescos,
+  salsas,
+} from "../data/menuPlataformas.json";
+import Price from "../components/Price.astro";
 ---
 
 <Layout title="Friestick Menu">
   <main
-    class="w-full h-[100vh] p-6 flex flex-col items-center text-white border-yellow-400 border-2"
+    class="w-full p-6 flex flex-col items-center text-white border-yellow-400 border-2"
   >
     <h1 class="text-6xl text-yellow-400">Friestick</h1>
     <section
-      class="mt-12 py-6 rounded-lg grid sm:grid-cols-1 md:grid-cols-3 w-full place-items-center gap-12"
+      class="mt-12 py-6 rounded-lg grid sm:grid-cols-1 md:grid-cols-3 w-full gap-12"
     >
-      <MenuSection title="Hamburgesas" emoji="🍔" />
-      <MenuSection title="Papas" emoji="🍟" />
-      <MenuSection title="Burros" emoji="🌯" />
-      <MenuSection title="Hotdogs" emoji="🌭" />
+      <MenuSection title="Hamburgesas" emoji="🍔">
+        {
+          hamburguesas.map((item) => (
+            <MenuItem
+              nombre={item.nombre}
+              precio={item.precio}
+              descripcion={item.descripcion}
+            />
+          ))
+        }
+      </MenuSection>
+      <MenuSection title="Papas" emoji="🍟">
+        {
+          papas.map((item) => (
+            <MenuItem
+              nombre={item.nombre}
+              precio={item.precio}
+              descripcion={item.descripcion}
+            />
+          ))
+        }
+      </MenuSection>
+      <MenuSection title="Burros" emoji="🌯">
+        <div class="flex">
+          <ul class="list-disc list-inside">
+            {burritos.ingredientes.map((item) => <li>{item}</li>)}
+          </ul>
+          <Price precio={burritos.precio} />
+        </div>
+      </MenuSection>
+      <MenuSection title="Hotdogs" emoji="🌭">
+        {
+          hotdogs.map((item) => (
+            <MenuItem
+              nombre={item.nombre}
+              precio={item.precio}
+              descripcion={item.descripcion}
+            />
+          ))
+        }
+      </MenuSection>
     </section>
   </main>
 </Layout>

@@ -1,0 +1,12 @@
+---
+export interface Props {
+  precio: number;
+}
+
+const precioFormateado = new Intl.NumberFormat("es-MX", {
+  style: "currency",
+  currency: "MXN",
+}).format(Astro.props.precio);
+---
+
+<span class="text-green-400">...{" "}{precioFormateado}</span>
